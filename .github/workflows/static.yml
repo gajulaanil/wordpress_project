@@ -25,3 +25,7 @@ jobs:
 
     - name: Run Tests
       run: phpunit
+
+    - name: Run PHPUnit Tests
+      run: vendor/bin/phpunit
+
