@@ -23,7 +23,7 @@ jobs:
     - name: Install Dependencies
       run: composer install
 
-   - name: Install PHPUnit
+    - name: Install PHPUnit
       run: composer require --dev phpunit/phpunit
 
     - name: Run PHPUnit
