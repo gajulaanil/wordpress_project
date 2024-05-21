@@ -10,5 +10,8 @@
         "psr-4": {
             "YourVendor\\YourPackage\\": "src/"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^x.x"
     }
 }
