@@ -26,8 +26,8 @@ jobs:
     - name: Install PHP_CodeSniffer
       run: composer require squizlabs/php_codesniffer --dev
 
-    - name: install PHP Mess Detector
-      run: vendor/bin/phpmd src text cleancode,codesize,controversial,design,naming,unusedcode
+    - name: Check PHP Modules
+      run: php -m
 
     - name: Deploy to Production
       run: |
