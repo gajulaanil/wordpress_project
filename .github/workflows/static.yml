@@ -29,10 +29,12 @@ jobs:
     - name: Check PHP Modules
       run: php -m
 
+    - name: Display index.php
+      run: php index.php
+
     - name: Deploy to Production
       run: |
         if [ ${{ github.ref }} = 'refs/heads/main' ]; then
           echo "Deploying to production..."
           # Add your deployment steps here
         fi
-
