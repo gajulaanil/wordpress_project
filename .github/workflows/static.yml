@@ -27,7 +27,7 @@ jobs:
       run: composer require squizlabs/php_codesniffer --dev
   
     - name: Run PHP Code Sniffer
-      run: vendor/bin/phpcs
+      run: vendor/bin/phpcs ./
 
     - name: Run PHP Mess Detector
       run: vendor/bin/phpmd src text cleancode,codesize,controversial,design,naming,unusedcode
